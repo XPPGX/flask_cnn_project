@@ -1,0 +1,21 @@
+
+
+<!doctype html>
+    
+<title>Predict president</title>
+<h1>Click image to predict</h1>
+
+
+
+{%for i in range(0, len)%}
+
+<form action="/face_check/{{ face_image[i] }}" method="post"> 
+    <button type="submit"><img src="{{ face_image[i] }}" width="100%" height="100%"></button>
+</form> 
+
+{%endfor%}
+
+<h4>預測結果為:{{res}}</h4>
+
+<title>Upload new File</title>
+<h1>Upload new File</h1>
