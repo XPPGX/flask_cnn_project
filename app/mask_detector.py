@@ -74,6 +74,5 @@ def mask_detect_showimg(filename,img_path):
   cv2.imwrite("./static/predict_"+filename+".jpg", img)
   #show_img(img)
 
-
-# if __name__ == '__main__':
-#   mask_detect_showimg('./chen.jpg')
+#if __name__ == '__main__':
+  #mask_detect_showimg('chen_test','E:\\TaiwanTech\\project\\flask_cnn_project\\app\\chen.jpg')

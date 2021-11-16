@@ -60,7 +60,7 @@ def upload_file():
             #return redirect(url_for('uploaded_file',filename=filename))
             filename = os.path.join(app.config['UPLOAD_FOLDER'], filename)
             
-            #mask_detect_showimg(file.filename.split('.')[0],filename)
+            mask_detect_showimg(file.filename.split('.')[0],filename)
             predict_filenamae = './static/predict_'+file.filename
             return render_template("index.html", test_image = filename ,predict_image = predict_filenamae)
             
